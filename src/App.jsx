@@ -7,13 +7,12 @@ function App() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    // setData(Data);
-    console.log(Data);
+    setData(Data);
   }, []);
 
   return (
     <>
-      <ChartCard />
+      <ChartCard data={data} />
     </>
   );
 }
